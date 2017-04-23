@@ -63,7 +63,7 @@
     <link href="http://yoursite.com/2017/04/22/%E8%B7%9F%E6%88%91%E6%9D%A5%E7%94%A8Hexo%E6%9D%A5%E5%BB%BA%E7%AB%8B%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Blog%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://yoursite.com/2017/04/22/跟我来用Hexo来建立属于自己的Blog（一）/</id>
     <published>2017-04-22T10:05:16.000Z</published>
-    <updated>2017-04-23T09:38:48.243Z</updated>
+    <updated>2017-04-23T09:40:58.823Z</updated>
     
     <content type="html"><![CDATA[<p>从这篇文章里你可以了解到：<br>1.谈谈自己<br>2.了解Hexo<br>3.关于Indigo<br>4.整个Hexo系列下来你所学到的东西<br><a id="more"></a></p>
 <h2 id="谈谈自己"><a href="#谈谈自己" class="headerlink" title="谈谈自己"></a>谈谈自己</h2><ul>
@@ -83,9 +83,9 @@
 </blockquote>
 <p>如果觉得上面的简洁介绍觉得不够的话可以去Hexo的官网查看<a href="https://hexo.io/api/" title="API" target="_blank" rel="external">API</a>.或者有什么问题可以通过主页的邮箱发邮件或者通过<a href="https://github.com/kkshell/kkshell.github.io" title="GitHub" target="_blank" rel="external">GitHub</a>发issue给我。我会尽我所能帮你解决。我觉得对于大部分的程序员来说，只要是自己喜欢的作品，自己会不惜一切代价去做出来。</p>
 <h2 id="关于Indigo"><a href="#关于Indigo" class="headerlink" title="关于Indigo"></a>关于Indigo</h2><blockquote>
-<p>Indigo使用了类似Android的MD设计模式，几乎在Google自家的网页设计中，这种设计语言运用自如，但是运用在博客网站中我却是第一次见到的，所以才会有想要试试的心态。</p>
-<h2 id="整个Hexo系列下来你所学到的东西"><a href="#整个Hexo系列下来你所学到的东西" class="headerlink" title="整个Hexo系列下来你所学到的东西"></a>整个Hexo系列下来你所学到的东西</h2><h3 id="通过这个系列的教程你可以"><a href="#通过这个系列的教程你可以" class="headerlink" title="通过这个系列的教程你可以:"></a><strong><em>通过这个系列的教程你可以</em></strong>:</h3><p>拥有自己一步一步创建出来的个人网站<br>拥有一个域名（花点小钱）<br>通过你的域名来访问你建出来的个人网站<br>维护你的个人网站<br>了解了这么多之后是不是迫不及待的想要进入实际操作了？来吧，进入第二篇的学习吧！！！</p>
+<p>Indigo使用了类似Android的MD设计模式，几乎在Google自家的网页设计中，这种设计语言运用自如，但是运用在博客网站中我却是第一次见到的，所以才会有想要试试的心态。  </p>
 </blockquote>
+<h2 id="整个Hexo系列下来你所学到的东西"><a href="#整个Hexo系列下来你所学到的东西" class="headerlink" title="整个Hexo系列下来你所学到的东西"></a>整个Hexo系列下来你所学到的东西</h2><h3 id="通过这个系列的教程你可以"><a href="#通过这个系列的教程你可以" class="headerlink" title="通过这个系列的教程你可以:"></a><strong><em>通过这个系列的教程你可以</em></strong>:</h3><p>拥有自己一步一步创建出来的个人网站<br>拥有一个域名（花点小钱）<br>通过你的域名来访问你建出来的个人网站<br>维护你的个人网站<br>了解了这么多之后是不是迫不及待的想要进入实际操作了？来吧，进入第二篇的学习吧！！！</p>
 ]]></content>
     
     <summary type="html">
