@@ -113,7 +113,7 @@
     <link href="http://yoursite.com/2017/04/23/%E8%B7%9F%E6%88%91%E6%9D%A5%E7%94%A8Hexo%E6%9D%A5%E5%BB%BA%E7%AB%8B%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Blog%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://yoursite.com/2017/04/23/跟我来用Hexo来建立属于自己的Blog（二）/</id>
     <published>2017-04-23T06:29:16.000Z</published>
-    <updated>2017-04-24T04:03:02.998Z</updated>
+    <updated>2017-04-24T04:03:58.767Z</updated>
     
     <content type="html"><![CDATA[<p>从这篇文章里你可以了解到：<br>1.安装Hexo所需要的所有软件<strong>（注意：我使用的是windows系统，如果是其它系统请到官方<a href="https://hexo.io/api/" title="API" target="_blank" rel="external">API</a>查看安装方式.）</strong><br>2.测试Hxeo<br>3.更换Hexo主题<br>4.开启标签页<br>5.开启分类页<br>6.配置404页面<br>7.检验实践成果<br><a id="more"></a></p>
 <h2 id="安装Hexo所需要的所有软件"><a href="#安装Hexo所需要的所有软件" class="headerlink" title="安装Hexo所需要的所有软件"></a>安装Hexo所需要的所有软件</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ul>
@@ -121,10 +121,10 @@
 <li>本教程使用的是GitHub+Hexo来建立个人网站。所以您还没有GitHub账号的话请<a href="https://github.com/" title="注册" target="_blank" rel="external">注册</a></li>
 <li>创建好个人账号之后，就可以自由的clone或者下载其他项目，但是你自己的网站是无法提交的。因为想要提交到GitHub上一定要通过授权，而GitHub是基于SSH（什么是<a href="http://baike.baidu.com/link?url=_p5oUGz5KCq3m9ZcJMl-yqB5r5G8x2ifPTvrfeEVqCQlHigXMI8WW_gPPway484SNoPEaPpKCS6BhxzVoGk47q" title="SSH" target="_blank" rel="external">SSH</a>？）授权的。</li>
 <li>大家可以在安装好Git之后再桌面点击右键Git Bash Here来运行Git Bash终端来安装SSH。</li>
-<li>在安装SSH之前先用以下命令设置用户名和邮箱.  </li>
-</ul>
-<p><code>git config -global user.name &quot;name&quot;</code><br><code>git config -global user.email &quot;name@yeah.net&quot;</code>  </p>
-<ul>
+<li><p>在安装SSH之前先用以下命令设置用户名和邮箱.  </p>
+<p>  <code>git config -global user.name &quot;name&quot;</code>  </p>
+<p>  <code>git config -global user.email &quot;name@yeah.net&quot;</code>  </p>
+</li>
 <li><p>然后使用以下命令创建SSH Key。  </p>
 <p>  <code>ssh-keygen -t rsa -C &quot;name@yeah.net&quot;</code></p>
 </li>
