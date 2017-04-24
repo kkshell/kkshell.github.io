@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>跟我来用Hexo来建立属于自己的Blog（四） | Jianji&#39;s Blog | There are no two words more harmful than &quot;Good Job&quot;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="HTML,Hexo">
+    <meta name="description" content="本章节你要学的有：1.通过花点小钱获得一个不太起眼的域名2.域名解析3.添加CNAME4.访问网站">
+<meta name="keywords" content="HTML,Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="跟我来用Hexo来建立属于自己的Blog（四）">
+<meta property="og:url" content="http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/index.html">
+<meta property="og:site_name" content="Jianji's Blog">
+<meta property="og:description" content="本章节你要学的有：1.通过花点小钱获得一个不太起眼的域名2.域名解析3.添加CNAME4.访问网站">
+<meta property="og:image" content="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093401.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093707.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_094753.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_095103.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/set11.jpg">
+<meta property="og:updated_time" content="2017-04-24T02:23:04.973Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="跟我来用Hexo来建立属于自己的Blog（四）">
+<meta name="twitter:description" content="本章节你要学的有：1.通过花点小钱获得一个不太起眼的域名2.域名解析3.添加CNAME4.访问网站">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093401.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="Jianji&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@1.6.1/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">谢健基</h5>
+          <a href="mailto:kkshell@yeah.net" title="kkshell@yeah.net" class="mail">kkshell@yeah.net</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/kkshell" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">跟我来用Hexo来建立属于自己的Blog（四）</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">跟我来用Hexo来建立属于自己的Blog（四）</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-04-24T01:27:51.000Z" itemprop="datePublished" class="page-time">
+  2017-04-24
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo网站搭建/">Hexo网站搭建</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通过花点小钱获得一个不太起眼的域名"><span class="post-toc-number">1.</span> <span class="post-toc-text">通过花点小钱获得一个不太起眼的域名</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-number">2.</span> <span class="post-toc-text">域名解析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#检验解析是否成功"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">检验解析是否成功</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#添加CNAME"><span class="post-toc-number">3.</span> <span class="post-toc-text">添加CNAME</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#访问网站"><span class="post-toc-number">4.</span> <span class="post-toc-text">访问网站</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-跟我来用Hexo来建立属于自己的Blog（四）"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">跟我来用Hexo来建立属于自己的Blog（四）</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-04-24 09:27:51" datetime="2017-04-24T01:27:51.000Z"  itemprop="datePublished">2017-04-24</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo网站搭建/">Hexo网站搭建</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>本章节你要学的有：<br>1.通过花点小钱获得一个不太起眼的域名<br>2.域名解析<br>3.添加CNAME<br>4.访问网站<br><a id="more"></a> </p>
+<h2 id="通过花点小钱获得一个不太起眼的域名"><a href="#通过花点小钱获得一个不太起眼的域名" class="headerlink" title="通过花点小钱获得一个不太起眼的域名"></a>通过花点小钱获得一个不太起眼的域名</h2><p>就我自己的亲身经历，腾讯云的学生1元购不错，就是验证太麻烦。所以我就是用阿里云来进行域名的购买。我买的是.top和.win。为什么我要买这两个呢？因为便宜！！并且之前因为手机丢了的原因。。大家买一个域名就可以了。就.com和.cn这些贵点一开始大概70多一年。  </p>
+<ol>
+<li>首先进入阿里云按照123来操作<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093401.png" alt="img1" title="">
+                </div>
+                <div class="image-caption">img1</div>
+            </figure>  </li>
+<li>按照下图进行域名的选择然后付钱之后就可以查看自己的域名啦。<br><img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093707.jpg" alt="img2"><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2></li>
+<li>进到域名管理点击解析来解析你的域名（<a href="http://baike.baidu.com/link?url=jp-FanURVcP9Y7RnCG-e0V3Wbfid6ekIACxE1VZS5EGqtHnCxN3pNaCVKY5WlJQWVFIZLZYkd37K434BsMRhiqyLhmWiLsV91hnMD3_UviMyrLwDNEmfWppRL89Jsoz2" title="域名解析" target="_blank" rel="external">域名解析</a>）<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_094753.jpg" alt="img3" title="">
+                </div>
+                <div class="image-caption">img3</div>
+            </figure></li>
+<li>然后按照下图进行设置，其它可以不要但下图的三个一定要设置好<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_095103.jpg" alt="img4" title="">
+                </div>
+                <div class="image-caption">img4</div>
+            </figure>
+主机记录www对应www.kkshell.com<br>主机记录@对应kkshell.com  </li>
+<li>如果不用GitHub提供的空间想要自己购买空间也是可以的。可以参考此文章来配置使用<h3 id="检验解析是否成功"><a href="#检验解析是否成功" class="headerlink" title="检验解析是否成功"></a>检验解析是否成功</h3></li>
+<li>检验成功之后进入到GitHub的网站的仓库里点击setting<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/set11.jpg" alt="img5" title="">
+                </div>
+                <div class="image-caption">img5</div>
+            </figure></li>
+<li>查看Git Pages的网站地址是否已经published为你想要的域名<h2 id="添加CNAME"><a href="#添加CNAME" class="headerlink" title="添加CNAME"></a>添加CNAME</h2>想网站能够正常访问还需要在本地的根目录下的source添加CNAME文件（没有后缀名的CNAME文件）在里面打name.top（例如我就是在里面打kkshell.top或者其他的你的域名）之后用在GitBash中执行以下命令  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="访问网站"><a href="#访问网站" class="headerlink" title="访问网站"></a>访问网站</h2><p>如无意外老铁们就可以通过你购买的域名来访问到你的github上的网站啦。有什么问题可以到我的<a href="https://github.com/kkshell/kkshell.github.io" title="GitHub" target="_blank" rel="external">GitHub</a>里发issue给我哦！</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-04-24T02:23:04.973Z" itemprop="dateUpdated">2017-04-24 10:23:04</time>
+</span><br>
+
+
+        这里写留言或版权声明：<a href="/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/" target="_blank" rel="external">http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/</a>
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="谢健基">
+            谢健基
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/&title=《跟我来用Hexo来建立属于自己的Blog（四）》 — Jianji's Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/&title=《跟我来用Hexo来建立属于自己的Blog（四）》 — Jianji's Blog&source=本章节你要学的有：1.通过花点小钱获得一个不太起眼的域名2.域名解析3.添加CNAME4.访问网站" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《跟我来用Hexo来建立属于自己的Blog（四）》 — Jianji's Blog&url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/04/24/跟我来用Hexo来建立属于自己的Blog（三）/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">跟我来用Hexo来建立属于自己的Blog（三）</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+ 
+
+<div id="SOHUCS" sid="跟我来用Hexo来建立属于自己的Blog（四）" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cysUkeX5G'; 
+var conf = 'prod_60afcdd5c73414aea0e0dce2601a3563'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width<960){window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
+</script>
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>谢健基 &copy; 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/&title=《跟我来用Hexo来建立属于自己的Blog（四）》 — Jianji's Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/&title=《跟我来用Hexo来建立属于自己的Blog（四）》 — Jianji's Blog&source=本章节你要学的有：1.通过花点小钱获得一个不太起眼的域名2.域名解析3.添加CNAME4.访问网站" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《跟我来用Hexo来建立属于自己的Blog（四）》 — Jianji's Blog&url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADGklEQVR42u3awXLaUAwFUP7/p+m2HYpzJT0yII5XmaTYPmKh6urdbvF1/+t6/M3jX6v3efz52VOe3fP2igsbGxv7Q9j3y+vZ6+Z3u+blpOui5BZsbGzsrez8kde3O9Vs8tJfl+bp77GxsbG/mJ3j8/GjV8rrO2NjY2NjJ7erjjTXz62WABsbGxu7GipVH58XrvrcX83SsLGxsd+enUc87//zS/bb2NjY2G/MvhevPOLJ1wlno6VIgY2Njb2IPQmM8hVCMkj0FsC9g0TY2NjYm9jJx3or3uq/qX52spbAxsbG3sTOG09Ssl5Mn79oNVSKtiLY2NjYH87OH5bH9HkhqoDJYhgbGxt7K3syfkxet9d4XhFRYWNjY+9gzyP+152TSdpk862wsbGxF7GrC9RTi+HCLroYfmFjY2N/DzsPeiaMXkTV/PaSrxAbGxt7EbsXx/SinFMl661+C985NjY29kexk1gnWeVWR5d766qOK9GZU2xsbOx17GqIc+ogTl7K6jLjP3/FxsbGXsfuLQkSdt6EeueM8qOf2NjY2N/A7o0T1VfJ46GkpfWGHGxsbOxN7GpbmrSfnDEJraorB2xsbOxPZ1dHjl5RJmvaXjv84X2wsbGxF7F7q9N5eNRrQqdCLmxsbOx97N6KtxowVRnVIClfSGNjY2NvYk/A1cM6+VBR7r3BCISNjY29lV0N7icxU/WITz6uNEcXbGxs7HXsXtuYH6bpFai3tMbGxsb+HnY1SDrbwKrtqjquYGNjY29lT9pM/v/8fOyZrJwPTGDY2NjYK9h57F5dBlSp81b3dBTBxsbGXsdOxobeKHLq0E/eYgsNDBsbG3spu1qI/LWSJpQXvXlhY2Njr2Dfi1c+cuTLht4xnep645/PYmNjYy9iHzj40op+qiPKvDRNPDY2NvaHsCdNqxzKH50X8tJgY2NjfwM7bwxJZD+Jh04V8YdnYWNjY2Mnt45Hmt7CoPfFYGNjY2MnMdNkkdBbHpRXztjY2Njr2NXgpnnksbhaqI5AheaKjY2NvYg9D2gmx316UVHvKA82Njb2OvYfebYWES6XZ6AAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@1.6.1/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@1.6.1/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

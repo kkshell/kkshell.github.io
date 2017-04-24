@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-23T09:37:29.362Z</updated>
+  <updated>2017-04-24T02:23:04.973Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,104 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>跟我来用Hexo来建立属于自己的Blog（四）</title>
+    <link href="http://yoursite.com/2017/04/24/%E8%B7%9F%E6%88%91%E6%9D%A5%E7%94%A8Hexo%E6%9D%A5%E5%BB%BA%E7%AB%8B%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Blog%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+    <id>http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/</id>
+    <published>2017-04-24T01:27:51.000Z</published>
+    <updated>2017-04-24T02:23:04.973Z</updated>
+    
+    <content type="html"><![CDATA[<p>本章节你要学的有：<br>1.通过花点小钱获得一个不太起眼的域名<br>2.域名解析<br>3.添加CNAME<br>4.访问网站<br><a id="more"></a> </p>
+<h2 id="通过花点小钱获得一个不太起眼的域名"><a href="#通过花点小钱获得一个不太起眼的域名" class="headerlink" title="通过花点小钱获得一个不太起眼的域名"></a>通过花点小钱获得一个不太起眼的域名</h2><p>就我自己的亲身经历，腾讯云的学生1元购不错，就是验证太麻烦。所以我就是用阿里云来进行域名的购买。我买的是.top和.win。为什么我要买这两个呢？因为便宜！！并且之前因为手机丢了的原因。。大家买一个域名就可以了。就.com和.cn这些贵点一开始大概70多一年。  </p>
+<ol>
+<li>首先进入阿里云按照123来操作<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093401.png" alt="img1" title="">
+                </div>
+                <div class="image-caption">img1</div>
+            </figure>  </li>
+<li>按照下图进行域名的选择然后付钱之后就可以查看自己的域名啦。<br><img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_093707.jpg" alt="img2"><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2></li>
+<li>进到域名管理点击解析来解析你的域名（<a href="http://baike.baidu.com/link?url=jp-FanURVcP9Y7RnCG-e0V3Wbfid6ekIACxE1VZS5EGqtHnCxN3pNaCVKY5WlJQWVFIZLZYkd37K434BsMRhiqyLhmWiLsV91hnMD3_UviMyrLwDNEmfWppRL89Jsoz2" title="域名解析" target="_blank" rel="external">域名解析</a>）<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_094753.jpg" alt="img3" title="">
+                </div>
+                <div class="image-caption">img3</div>
+            </figure></li>
+<li>然后按照下图进行设置，其它可以不要但下图的三个一定要设置好<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-24_095103.jpg" alt="img4" title="">
+                </div>
+                <div class="image-caption">img4</div>
+            </figure>
+主机记录www对应www.kkshell.com<br>主机记录@对应kkshell.com  </li>
+<li>如果不用GitHub提供的空间想要自己购买空间也是可以的。可以参考此文章来配置使用<h3 id="检验解析是否成功"><a href="#检验解析是否成功" class="headerlink" title="检验解析是否成功"></a>检验解析是否成功</h3></li>
+<li>检验成功之后进入到GitHub的网站的仓库里点击setting<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/set11.jpg" alt="img5" title="">
+                </div>
+                <div class="image-caption">img5</div>
+            </figure></li>
+<li>查看Git Pages的网站地址是否已经published为你想要的域名<h2 id="添加CNAME"><a href="#添加CNAME" class="headerlink" title="添加CNAME"></a>添加CNAME</h2>想网站能够正常访问还需要在本地的根目录下的source添加CNAME文件（没有后缀名的CNAME文件）在里面打name.top（例如我就是在里面打kkshell.top或者其他的你的域名）之后用在GitBash中执行以下命令  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="访问网站"><a href="#访问网站" class="headerlink" title="访问网站"></a>访问网站</h2><p>如无意外老铁们就可以通过你购买的域名来访问到你的github上的网站啦。有什么问题可以到我的<a href="https://github.com/kkshell/kkshell.github.io" title="GitHub" target="_blank" rel="external">GitHub</a>里发issue给我哦！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本章节你要学的有：&lt;br&gt;1.通过花点小钱获得一个不太起眼的域名&lt;br&gt;2.域名解析&lt;br&gt;3.添加CNAME&lt;br&gt;4.访问网站&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo网站搭建" scheme="http://yoursite.com/categories/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跟我来用Hexo来建立属于自己的Blog（三）</title>
+    <link href="http://yoursite.com/2017/04/24/%E8%B7%9F%E6%88%91%E6%9D%A5%E7%94%A8Hexo%E6%9D%A5%E5%BB%BA%E7%AB%8B%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Blog%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+    <id>http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（三）/</id>
+    <published>2017-04-24T00:41:51.000Z</published>
+    <updated>2017-04-24T02:19:59.239Z</updated>
+    
+    <content type="html"><![CDATA[<p>本章节你要学的有：<br>1.使用GitHub提供的作为你的域名和域名空间<br>2.可以通过二级域名来访问啦<br><a id="more"></a> </p>
+<h2 id="使用GitHub提供的作为你的域名和域名空间"><a href="#使用GitHub提供的作为你的域名和域名空间" class="headerlink" title="使用GitHub提供的作为你的域名和域名空间"></a>使用GitHub提供的作为你的域名和域名空间</h2><h3 id="创建个人仓库"><a href="#创建个人仓库" class="headerlink" title="创建个人仓库"></a>创建个人仓库</h3><p>相信前面的已经都注册好了GitHub账号了（如没有请到第二章节学习），请登录你的账户，新建一个仓库（Repositories）命名为<a href="">name.github.io</a>，比如我的就建成kkshell.github.io</p>
+<h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><p>接着将deploy修改为以下样式<strong>（记住每个：后面都要添加一个空格！）</strong>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/name/name.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
+<h3 id="安装支持Hexo的git插件-Git-Bash中操作"><a href="#安装支持Hexo的git插件-Git-Bash中操作" class="headerlink" title="安装支持Hexo的git插件(Git Bash中操作)"></a>安装支持Hexo的git插件(Git Bash中操作)</h3><p>按以下命令操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<h3 id="静态化个人网站"><a href="#静态化个人网站" class="headerlink" title="静态化个人网站"></a>静态化个人网站</h3><p><strong>（通过以下命令会在网站根目录下生成public文件，部署之后就是将public的文件提交到你的GitHub中去）</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g或hexo generate</div></pre></td></tr></table></figure></p>
+<h3 id="部署个人网站"><a href="#部署个人网站" class="headerlink" title="部署个人网站"></a>部署个人网站</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d或hexo deploy</div></pre></td></tr></table></figure>
+<h2 id="可以通过二级域名来访问啦"><a href="#可以通过二级域名来访问啦" class="headerlink" title="可以通过二级域名来访问啦"></a>可以通过二级域名来访问啦</h2><p>如无意外，接着就可以通过<a href="https://name.github.com.io来访问你的个人网站啦" target="_blank" rel="external">https://name.github.com.io来访问你的个人网站啦</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本章节你要学的有：&lt;br&gt;1.使用GitHub提供的作为你的域名和域名空间&lt;br&gt;2.可以通过二级域名来访问啦&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo网站搭建" scheme="http://yoursite.com/categories/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>跟我来用Hexo来建立属于自己的Blog（二）</title>
     <link href="http://yoursite.com/2017/04/23/%E8%B7%9F%E6%88%91%E6%9D%A5%E7%94%A8Hexo%E6%9D%A5%E5%BB%BA%E7%AB%8B%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Blog%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://yoursite.com/2017/04/23/跟我来用Hexo来建立属于自己的Blog（二）/</id>
     <published>2017-04-23T06:29:16.000Z</published>
-    <updated>2017-04-23T09:37:29.362Z</updated>
+    <updated>2017-04-24T03:58:53.729Z</updated>
     
     <content type="html"><![CDATA[<p>从这篇文章里你可以了解到：<br>1.安装Hexo所需要的所有软件<strong>（注意：我使用的是windows系统，如果是其它系统请到官方<a href="https://hexo.io/api/" title="API" target="_blank" rel="external">API</a>查看安装方式.）</strong><br>2.测试Hxeo<br>3.更换Hexo主题<br>4.开启标签页<br>5.开启分类页<br>6.配置404页面<br>7.检验实践成果<br><a id="more"></a></p>
 <h2 id="安装Hexo所需要的所有软件"><a href="#安装Hexo所需要的所有软件" class="headerlink" title="安装Hexo所需要的所有软件"></a>安装Hexo所需要的所有软件</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ul>
@@ -28,10 +121,9 @@
 <li>本教程使用的是GitHub+Hexo来建立个人网站。所以您还没有GitHub账号的话请<a href="https://github.com/" title="注册" target="_blank" rel="external">注册</a></li>
 <li>创建好个人账号之后，就可以自由的clone或者下载其他项目，但是你自己的网站是无法提交的。因为想要提交到GitHub上一定要通过授权，而GitHub是基于SSH（什么是<a href="http://baike.baidu.com/link?url=_p5oUGz5KCq3m9ZcJMl-yqB5r5G8x2ifPTvrfeEVqCQlHigXMI8WW_gPPway484SNoPEaPpKCS6BhxzVoGk47q" title="SSH" target="_blank" rel="external">SSH</a>？）授权的。</li>
 <li>大家可以在安装好Git之后再桌面点击右键Git Bash Here来运行Git Bash终端来安装SSH。</li>
-<li><p>在安装SSH之前先用以下命令设置用户名和邮箱.  </p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line">	git config -global user.name &quot;name&quot;    </div><div class="line"></div><div class="line">    git config -global user.email &quot;name@yeah.net&quot;  </div><div class="line">	``` </div><div class="line"></div><div class="line"></div><div class="line">* 然后使用以下命令创建SSH Key。  </div><div class="line"></div><div class="line">	`ssh-keygen -t rsa -C &quot;name@yeah.net&quot;`</div><div class="line">  </div><div class="line">* 然后就会生成rsa算法的密匙，紧接着三四个回车键就会生成[id_rsa]()和[id_rsa.pub]()两个文件,通过默认的路径/c/Documents and Settings/username/.ssh**（根据不同的安装路径不同）**,都是隐藏文件，相信你们有办法查看的。</div><div class="line">* 先按下图进入设置  </div><div class="line">![img1](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-23_152103.jpg)</div><div class="line"></div><div class="line">* 再将[id_rsa.pub]()文件的内容进行复制，按下图的123来点击进行添加SSH  </div><div class="line"></div><div class="line">![img2](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-23_152351.jpg)  </div><div class="line">### 安装Node.js</div><div class="line"></div><div class="line">下载并安装[Node.js](https://nodejs.org/en/ &quot;Node.js&quot;)  **软件安装后最好配置一下环境变量，否则有些命令是不能在Git Bash中使用的**  </div><div class="line">安装好后可以用以下命令来查看是否安装成功显示版本信息   </div><div class="line">    `node -v`</div><div class="line">###安装Hexo</div><div class="line">所有环境都安装好之后打开Git Bash输入以下命令开始安装Hexo啦~\(≧▽≦)/  </div><div class="line"></div><div class="line">` npm install hexo-cli -g`  </div><div class="line"></div><div class="line">* 安装好后可以用以下命令查看否安装成功显示版本信息  </div><div class="line"></div><div class="line">	`hexo -v`</div><div class="line"></div><div class="line">###开始搭建你的网站目录啦~\(≧▽≦)/~</div><div class="line">* 执行下列命令  **此命令在哪个路径执行你的个人网站的文件夹就会在哪个路径里**  </div><div class="line">    `hexo init &lt;你的个人网站的文件夹名字&gt;`  </div><div class="line">* cd进入命令  </div><div class="line">`cd  &lt;你的个人网站的文件夹名字&gt;`  </div><div class="line">* 安装npm  这个时间有点长要等待</div><div class="line">`install npm`</div><div class="line">* 安装好后可以用以下命令查看否安装成功显示版本信息  </div><div class="line">    `npm -v`</div><div class="line">* 如果上面的不能够下载的话是因为是国外的下载渠道，在国内用会有网速等等的影响，可以使用[淘宝镜像](https://npm.taobao.org/ &quot;淘宝镜像&quot;)来下载安装</div><div class="line">    `npm install cnpm -g --registry=https://registry.npm.taobao.org`</div><div class="line">*然后进入你的本地网站的目录下（加入我的目录是/c/Blog）你就会看到这样的目录结构  </div><div class="line">![img3](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/mulu3.jpg)</div><div class="line">## 测试Hexo ##</div><div class="line">* 进入你的博客根目录下右击打开Git Bash执行下列命令  </div><div class="line">    `hexo s或者hexo server`  </div><div class="line">* 执行完上面的命令之后你就可以通过http://localhost:4000/来访问你的个人网站了，这个网站默认使用的主题是landscape（界面如图）  </div><div class="line">![img4](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/hexolanscape.png)  </div><div class="line">## 更换Hexo主题 ##</div><div class="line">经历了漫长的调试出来之后你一定会很开心ヾ(o◕∀◕)ﾉヾ如果你不喜欢这个主题的话那就开始更换[主题](https://hexo.io/themes/ &quot;主题&quot;)啦！可以点击主题选择自己喜欢的主题。  </div><div class="line">我将会教大家使用Indigo主题,其它主题的使用方法大同小异  </div><div class="line">![img5](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-23_165545.jpg)</div><div class="line">### 安装主题</div><div class="line">* 确认你的Hexo版本在3.0以上，以及Node版本为6.x以上，进入Hexo根目录（例如我的为/c/blog），执行以下命令。记住下载完主题之后需要在Hexo根目录下修改theme: indigo**(这里一定一定一定要记得不管是修改什么属性：前面一定要加一个空格，不然写什么都没用)**</div><div class="line">    `git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo`  </div><div class="line">### 安装依赖</div></pre></td></tr></table></figure>
-</li>
+<li>在安装SSH之前先用以下命令设置用户名和邮箱.  </li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line">git config -global user.name &quot;name&quot;    </div><div class="line"></div><div class="line">git config -global user.email &quot;name@yeah.net&quot;  </div><div class="line">``` </div><div class="line"></div><div class="line">* 然后使用以下命令创建SSH Key。  </div><div class="line"></div><div class="line">	`ssh-keygen -t rsa -C &quot;name@yeah.net&quot;`</div><div class="line">  </div><div class="line">* 然后就会生成rsa算法的密匙，紧接着三四个回车键就会生成[id_rsa]()和[id_rsa.pub]()两个文件,通过默认的路径/c/Documents and Settings/username/.ssh**（根据不同的安装路径不同）**,都是隐藏文件，相信你们有办法查看的。</div><div class="line">* 先按下图进入设置  </div><div class="line">![img1](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-23_152103.jpg)</div><div class="line"></div><div class="line">* 再将[id_rsa.pub]()文件的内容进行复制，按下图的123来点击进行添加SSH  </div><div class="line"></div><div class="line">![img2](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-23_152351.jpg)  </div><div class="line">### 安装Node.js</div><div class="line"></div><div class="line">下载并安装[Node.js](https://nodejs.org/en/ &quot;Node.js&quot;)  **软件安装后最好配置一下环境变量，否则有些命令是不能在Git Bash中使用的**  </div><div class="line">安装好后可以用以下命令来查看是否安装成功显示版本信息   </div><div class="line">    `node -v`</div><div class="line">###安装Hexo</div><div class="line">所有环境都安装好之后打开Git Bash输入以下命令开始安装Hexo啦~\(≧▽≦)/  </div><div class="line"></div><div class="line">` npm install hexo-cli -g`  </div><div class="line"></div><div class="line">* 安装好后可以用以下命令查看否安装成功显示版本信息  </div><div class="line"></div><div class="line">	`hexo -v`</div><div class="line"></div><div class="line">###开始搭建你的网站目录啦~\(≧▽≦)/~</div><div class="line">* 执行下列命令  **此命令在哪个路径执行你的个人网站的文件夹就会在哪个路径里**  </div><div class="line">    `hexo init &lt;你的个人网站的文件夹名字&gt;`  </div><div class="line">* cd进入命令  </div><div class="line">`cd  &lt;你的个人网站的文件夹名字&gt;`  </div><div class="line">* 安装npm  这个时间有点长要等待</div><div class="line">`install npm`</div><div class="line">* 安装好后可以用以下命令查看否安装成功显示版本信息  </div><div class="line">    `npm -v`</div><div class="line">* 如果上面的不能够下载的话是因为是国外的下载渠道，在国内用会有网速等等的影响，可以使用[淘宝镜像](https://npm.taobao.org/ &quot;淘宝镜像&quot;)来下载安装</div><div class="line">    `npm install cnpm -g --registry=https://registry.npm.taobao.org`</div><div class="line">*然后进入你的本地网站的目录下（加入我的目录是/c/Blog）你就会看到这样的目录结构  </div><div class="line">![img3](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/mulu3.jpg)</div><div class="line">## 测试Hexo ##</div><div class="line">* 进入你的博客根目录下右击打开Git Bash执行下列命令  </div><div class="line">    `hexo s或者hexo server`  </div><div class="line">* 执行完上面的命令之后你就可以通过http://localhost:4000/来访问你的个人网站了，这个网站默认使用的主题是landscape（界面如图）  </div><div class="line">![img4](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/hexolanscape.png)  </div><div class="line">## 更换Hexo主题 ##</div><div class="line">经历了漫长的调试出来之后你一定会很开心ヾ(o◕∀◕)ﾉヾ如果你不喜欢这个主题的话那就开始更换[主题](https://hexo.io/themes/ &quot;主题&quot;)啦！可以点击主题选择自己喜欢的主题。  </div><div class="line">我将会教大家使用Indigo主题,其它主题的使用方法大同小异  </div><div class="line">![img5](https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/2017-04-23_165545.jpg)</div><div class="line">### 安装主题</div><div class="line">* 确认你的Hexo版本在3.0以上，以及Node版本为6.x以上，进入Hexo根目录（例如我的为/c/blog），执行以下命令。记住下载完主题之后需要在Hexo根目录下修改theme: indigo**(这里一定一定一定要记得不管是修改什么属性：前面一定要加一个空格，不然写什么都没用)**</div><div class="line">    `git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo`  </div><div class="line">### 安装依赖</div></pre></td></tr></table></figure>
 <p>$ npm install hexo-renderer-less –save</p>
 <p>$ npm install hexo-generator-feed –save  </p>
 <p>$ npm install hexo-generator-json-content –save </p>
