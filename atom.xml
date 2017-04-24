@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-24T02:23:04.973Z</updated>
+  <updated>2017-04-24T04:11:36.230Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/24/%E8%B7%9F%E6%88%91%E6%9D%A5%E7%94%A8Hexo%E6%9D%A5%E5%BB%BA%E7%AB%8B%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Blog%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
     <id>http://yoursite.com/2017/04/24/跟我来用Hexo来建立属于自己的Blog（四）/</id>
     <published>2017-04-24T01:27:51.000Z</published>
-    <updated>2017-04-24T02:23:04.973Z</updated>
+    <updated>2017-04-24T04:11:36.230Z</updated>
     
     <content type="html"><![CDATA[<p>本章节你要学的有：<br>1.通过花点小钱获得一个不太起眼的域名<br>2.域名解析<br>3.添加CNAME<br>4.访问网站<br><a id="more"></a> </p>
 <h2 id="通过花点小钱获得一个不太起眼的域名"><a href="#通过花点小钱获得一个不太起眼的域名" class="headerlink" title="通过花点小钱获得一个不太起眼的域名"></a>通过花点小钱获得一个不太起眼的域名</h2><p>就我自己的亲身经历，腾讯云的学生1元购不错，就是验证太麻烦。所以我就是用阿里云来进行域名的购买。我买的是.top和.win。为什么我要买这两个呢？因为便宜！！并且之前因为手机丢了的原因。。大家买一个域名就可以了。就.com和.cn这些贵点一开始大概70多一年。  </p>
@@ -56,7 +56,14 @@
                 </div>
                 <div class="image-caption">img5</div>
             </figure></li>
-<li>查看Git Pages的网站地址是否已经published为你想要的域名<h2 id="添加CNAME"><a href="#添加CNAME" class="headerlink" title="添加CNAME"></a>添加CNAME</h2>想网站能够正常访问还需要在本地的根目录下的source添加CNAME文件（没有后缀名的CNAME文件）在里面打name.top（例如我就是在里面打kkshell.top或者其他的你的域名）之后用在GitBash中执行以下命令  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
+<li>查看Git Pages的网站地址是否已经published为你想要的域名<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://raw.githubusercontent.com/kkshell/MarkDownPhotos/master/Hexo%EF%BC%88%E4%BA%8C%EF%BC%89/set22.jpg" alt="img6" title="">
+                </div>
+                <div class="image-caption">img6</div>
+            </figure>
+<h2 id="添加CNAME"><a href="#添加CNAME" class="headerlink" title="添加CNAME"></a>添加CNAME</h2>想网站能够正常访问还需要在本地的根目录下的source添加CNAME文件（没有后缀名的CNAME文件）在里面打name.top（例如我就是在里面打kkshell.top或者其他的你的域名）之后用在GitBash中执行以下命令  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g -d</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h2 id="访问网站"><a href="#访问网站" class="headerlink" title="访问网站"></a>访问网站</h2><p>如无意外老铁们就可以通过你购买的域名来访问到你的github上的网站啦。有什么问题可以到我的<a href="https://github.com/kkshell/kkshell.github.io" title="GitHub" target="_blank" rel="external">GitHub</a>里发issue给我哦！</p>
